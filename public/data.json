@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "companySize": "1-20"
+    },
+
+    {
+        "id": 2,
+        "companySize": "21-50"
+    },
+
+    {
+        "id": 3,
+        "companySize": "51-200"
+    },
+
+    {
+        "id": 4,
+        "companySize": "201-500"
+    },
+
+    {
+        "id": 5,
+        "companySize": "500+"
+    }
+]
