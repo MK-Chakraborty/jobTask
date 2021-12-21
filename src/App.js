@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <Container>
         <header className="text-start">
-          <img src={logo} alt="Wobot.ai" className="m-5" />
+          <img src={logo} alt="Wobot.ai" className="m-5 logo" />
         </header>
         <Row>
           <Col
@@ -28,6 +28,12 @@ function App() {
             lg={{ span: 8, offset: 2 }}
           >
             <main className="ipForm p-5">
+              <section className="my-3 text-center logoMain">
+                <div className="fstLine"></div>
+                <div className="secLine"></div>
+                <div className="trdLine"></div>
+              </section>
+
               <h2 className="fw-bold">It’s a delight to have you</h2>
               <h2 className="fw-bold">onboard</h2>
               <article>
@@ -39,7 +45,7 @@ function App() {
               <section className="text-start">
                 <Form>
                   <Form.Group className="mb-4">
-                    <Form.Label>Company Name</Form.Label>
+                    <Form.Label>Company name</Form.Label>
                     <Form.Control type="text" placeholder="e.g. Example Inc" />
                   </Form.Group>
 
@@ -53,23 +59,17 @@ function App() {
                     </Form.Select>
                   </Form.Group>
 
-                  <Form.Group>
+                  <Form.Group className="mb-4">
                     <Form.Label>Company Size</Form.Label>
                     <br />
-                    <div>
+                    <div className="d-flex justify-content-between flex-wrap">
                       {compSizes.map((compSize) => (
                         <CompanySizes
                           key={compSize.id}
-                          compSize={compSizes}
+                          compSize={compSize}
                         ></CompanySizes>
                       ))}
                     </div>
-                    <span
-                      className="p-1 rounded-3"
-                      style={{ background: "#F0F0F0" }}
-                    >
-                      1 - 20
-                    </span>
                   </Form.Group>
 
                   <Button
@@ -82,6 +82,10 @@ function App() {
                 </Form>
               </section>
             </main>
+
+            <footer>
+              <h6 className="fw-light">Terms of use | Privacy policy</h6>
+            </footer>
           </Col>
         </Row>
       </Container>
