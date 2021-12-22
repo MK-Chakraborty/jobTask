@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import CompanySizes from "./Components/CompanySizes/CompanySizes";
 
 function App() {
+  // Cetting Company Sizes from data.json
   const [compSizes, setCompSizes] = useState([]);
 
   useEffect(() => {

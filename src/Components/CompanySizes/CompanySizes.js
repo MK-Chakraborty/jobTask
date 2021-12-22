@@ -3,6 +3,8 @@ import React, { useState } from "react";
 const CompanySizes = ({ compSize }) => {
   const [bgColor, setBgColor] = useState("#F0F0F0");
   const [fColor, setFColor] = useState("#000000");
+
+  // Changing span background on click
   const handleClick = () => {
     if (bgColor === "#3766e8" && fColor === "#ffffff") {
       setBgColor("#F0F0F0");
